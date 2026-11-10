@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oscar Ramirez | Front-end Developer | UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{
+  fontFamily:{sans:['Sora','Helvetica Neue','Arial','sans-serif'],mono:['JetBrains Mono','Consolas','monospace']},
+  colors:{ink:'#050806',panel:'#0b120f',line:'rgba(52,211,153,.16)',neon:'#34d399',ice:'#38bdf8'}
+}}}
+</script>
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:#050806}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{background:#050806;color:#e2e8f0}
+a:focus-visible{outline:3px solid #34d399;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="bg-ink text-slate-200 font-sans antialiased overflow-x-hidden">
+
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/85 backdrop-blur border-b border-line" style="padding-top:env(safe-area-inset-top,0px)">
+  <nav class="max-w-7xl mx-auto px-6 py-3 md:py-0 md:h-16 flex flex-wrap md:flex-nowrap items-center justify-between gap-x-4 gap-y-2" aria-label="Sections">
+    <a href="#about" class="font-mono font-medium text-lg md:text-xl text-white"><span class="text-neon">&lt;</span>Oscar Ramirez<span class="text-neon">/&gt;</span></a>
+    <ul class="order-3 md:order-none md:ml-auto md:mr-2 w-full md:w-auto flex gap-5 md:gap-6 text-sm text-slate-400 overflow-x-auto whitespace-nowrap pb-1 md:pb-0">
+      <li><a href="#about" class="inline-block py-1 hover:text-neon transition-colors">About me</a></li>
+      <li><a href="#skills" class="inline-block py-1 hover:text-neon transition-colors">Technologies</a></li>
+      <li><a href="#projects" class="inline-block py-1 hover:text-neon transition-colors">Projects</a></li>
+      <li><a href="#courses" class="inline-block py-1 hover:text-neon transition-colors">Courses</a></li>
+    </ul>
+    <a href="#contact" class="border border-neon text-neon px-4 py-2 rounded-md text-sm font-semibold hover:bg-neon hover:text-ink transition-colors">Contact me</a>
+  </nav>
+</header>
+
+<section id="about" class="relative">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 60% 50% at 80% 20%,rgba(52,211,153,.14),transparent 70%),radial-gradient(ellipse 40% 40% at 10% 90%,rgba(56,189,248,.10),transparent 70%)"></div>
+  <div class="absolute inset-0 pointer-events-none opacity-[.06]" style="background-image:linear-gradient(#34d399 1px,transparent 1px),linear-gradient(90deg,#34d399 1px,transparent 1px);background-size:44px 44px"></div>
+  <div class="relative max-w-7xl mx-auto px-6 pt-32 md:pt-36 lg:pt-44 pb-20 md:pb-24 lg:pb-32 grid md:grid-cols-[1.15fr_.85fr] lg:grid-cols-[1.25fr_.75fr] gap-12 lg:gap-16 items-center">
+    <div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight text-white">
+        Oscar Ramirez<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon to-ice">Front-end Developer & UI/UX Designer</span>
+      </h1>
+      <p class="mt-6 text-base sm:text-lg lg:text-xl text-slate-400 max-w-xl lg:max-w-2xl">
+        I'm a developer who continues learning about programming tools and enjoy gaining new knowledge. During all this time I learned how to use differents tools such as <strong class="text-slate-200">Canva</strong>, <strong class="text-slate-200">Figma</strong> and <strong class="text-slate-200">Power BI</strong>. ALso, I learned differents programming lenguajes such as <strong class="text-slate-200">HTML</strong>, <strong class="text-slate-200">Tailwind CSS</strong>, <strong class="text-slate-200">Python</strong> and others technologies. After learning about this technoogies I discovered that my strengths lie in <strong class="text-slate-200">Front-end Development</strong> and <strong class="text-slate-200">UI/UX Designing</strong>.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-4 font-semibold">
+        <a href="#projects" class="bg-neon text-ink px-6 py-3 lg:px-8 lg:py-4 lg:text-lg rounded-md hover:-translate-y-0.5 hover:shadow-[0_8px_28px_-6px_rgba(52,211,153,.6)] transition">Projects</a>
+        <a href="#courses" class="border border-line bg-panel px-6 py-3 lg:px-8 lg:py-4 lg:text-lg rounded-md hover:border-neon/60 transition-colors">Courses</a>
+      </div>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="https://github.com/Adalberto-Ramirez" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" class="inline-flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-md border border-line bg-panel text-slate-400 hover:border-neon/60 hover:text-neon hover:-translate-y-0.5 transition">
+          <svg class="w-6 h-6 lg:w-7 lg:h-7" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/oscar-ramirez-10b4a3430?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="inline-flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-md border border-line bg-panel text-slate-400 hover:border-ice/60 hover:text-ice hover:-translate-y-0.5 transition">
+          <svg class="w-6 h-6 lg:w-7 lg:h-7" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:oscar.adalberto.ramirez.s@gmail.com" aria-label="Email" title="Email" class="inline-flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-md border border-line bg-panel text-slate-400 hover:border-neon/60 hover:text-neon hover:-translate-y-0.5 transition">
+          <svg class="w-6 h-6 lg:w-7 lg:h-7" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="order-first md:order-last mx-auto w-52 sm:w-64 md:w-full max-w-sm lg:max-w-md">
+      <div class="relative">
+        <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border border-neon/30" aria-hidden="true"></div>
+        <div class="relative aspect-[4/5] rounded-2xl border border-line bg-panel shadow-[0_0_70px_-20px_rgba(52,211,153,.45)] overflow-hidden">
+          <!-- Esto se ve mientras no hayas puesto tu foto -->
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 px-4 text-center text-sm text-slate-500">
+            <svg class="w-16 h-16 text-neon/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            <span>Your photo goes here</span>
+          </div>
+          <!-- EDITA: guarda tu foto como img/profile.jpg (o cambia el nombre en url) -->
+          <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('me.jpeg')" role="img" aria-label="Photo of Oscar Ramirez"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="max-w-5xl mx-auto px-6 py-16 md:py-20 scroll-mt-28 md:scroll-mt-20">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-white"><span class="text-neon">/</span> Technologies</h2>
+  <p class="mt-3 text-slate-400">Tools and platforms I have used and have working knowledge of.</p>
+  <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="rounded-xl border border-line bg-panel p-6 hover:border-neon/50 transition-colors">
+      <h3 class="font-semibold text-white mb-4">Web development</h3>
+      <div class="flex flex-wrap gap-2 font-mono text-sm">
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">HTML</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-ice">Tailwind CSS</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">JavaScript</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-ice">Next.js</span>
+      </div>
+    </div>
+    <div class="rounded-xl border border-line bg-panel p-6 hover:border-neon/50 transition-colors">
+      <h3 class="font-semibold text-white mb-4">Code &amp; databases</h3>
+      <div class="flex flex-wrap gap-2 font-mono text-sm">
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">Python</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-ice">MySQL</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">VS Code</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-ice">GitHub</span>
+      </div>
+    </div>
+    <div class="rounded-xl border border-line bg-panel p-6 hover:border-neon/50 transition-colors">
+      <h3 class="font-semibold text-white mb-4">Data &amp; Microsoft tools</h3>
+      <div class="flex flex-wrap gap-2 font-mono text-sm">
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">Power BI</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-ice">Excel</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">Power Apps</span>
+      </div>
+    </div>
+    <div class="rounded-xl border border-line bg-panel p-6 hover:border-neon/50 transition-colors">
+      <h3 class="font-semibold text-white mb-4">Design &amp; collaboration</h3>
+      <div class="flex flex-wrap gap-2 font-mono text-sm">
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">Figma</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-ice">Miro</span>
+        <span class="rounded-md border border-line bg-white/5 px-3 py-1 text-neon">Canva</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" class="max-w-5xl mx-auto px-6 py-16 md:py-20 scroll-mt-28 md:scroll-mt-20">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-white"><span class="text-neon">/</span> Projects</h2>
+  <p class="mt-3 text-slate-400">Projects built during my time studying as a developer.</p>
+  <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+    <article class="group rounded-xl border border-line bg-panel overflow-hidden flex flex-col hover:-translate-y-1 hover:border-neon/60 hover:shadow-[0_10px_40px_-15px_rgba(52,211,153,.5)] transition">
+      <div class="h-36 border-b border-line bg-ink/60 ">
+        <img src="Transportech.jpeg" alt="Transportech logo" class="h-full w-full bg-white ">
+      </div>
+      <div class="p-6 flex flex-col flex-1">
+        <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs mb-4"><span class="text-neon">Figma</span><span class="text-ice">Power Apps</span></div>
+        <div class="flex items-baseline justify-between gap-3">
+          <h3 class="text-xl font-semibold text-white">Transportech</h3>
+          <span class="shrink-0 rounded-md border border-neon/40 bg-neon/10 px-2 py-0.5 font-mono text-xs text-neon">2024</span>
+        </div>
+        <p class="mt-2 text-slate-400 text-sm">A project built to help people learn about public transportation routes and have them monitored by users.</p>
+        <p class="mt-3 text-sm text-slate-300"><strong class="text-ice">My role:</strong> During this project I worked as UI/UX Designer in Figma. I also worked as a Developer in Power Apps.</p>
+        <div class="mt-auto pt-5 flex gap-5 text-sm font-semibold">
+          <a href="https://apps.powerapps.com/play/e/default-d8e3bd44-0bba-426b-952d-ada7bb17393c/a/3ae74c00-d838-452a-b389-410e6d6d6457?tenantId=d8e3bd44-0bba-426b-952d-ada7bb17393c&hint=1f77464a-c098-4656-9160-d373f4918fd6&sourcetime=1731708283958" target="_blank" rel="noopener noreferrer" class="py-1 text-neon hover:underline">Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="group rounded-xl border border-line bg-panel overflow-hidden flex flex-col hover:-translate-y-1 hover:border-neon/60 hover:shadow-[0_10px_40px_-15px_rgba(52,211,153,.5)] transition">
+      <div class="h-36 border-b border-line bg-ink/60">
+        <img src="NOUVA.jpeg" alt="NOUVA logo" class="h-full w-full ">
+      </div>
+      <div class="p-6 flex flex-col flex-1">
+        <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs mb-4"><span class="text-neon">HTML</span><span class="text-ice">Tailwind CSS</span><span class="text-neon">JavaScript</span><span class="text-ice">Python</span></div>
+        <div class="flex items-baseline justify-between gap-3">
+          <h3 class="text-xl font-semibold text-white">NOUVA</h3>
+          <span class="shrink-0 rounded-md border border-neon/40 bg-neon/10 px-2 py-0.5 font-mono text-xs text-neon">2025</span>
+        </div>
+        <p class="mt-2 text-slate-400 text-sm">This project is dedicated to students who want to improve their skills and perform better at university.</p>
+        <p class="mt-3 text-sm text-slate-300"><strong class="text-ice">My role:</strong> I worked on the challenges page. First working as designer and then working the Front-end part of this page.</p>
+        <details class="mt-4 rounded-lg border border-line bg-ink/60 open:border-neon/50">
+          <summary class="cursor-pointer select-none px-4 py-3 text-sm font-semibold text-neon marker:text-neon hover:text-white">Watch video</summary>
+          <div class="px-3 pb-3">
+            <video class="aspect-video w-full rounded-md bg-black" controls preload="metadata" src="NOUVA_O.mp4">Your browser does not support video.</video>
+          </div>
+        </details>
+        <div class="mt-auto pt-5 flex gap-5 text-sm font-semibold">
+          <a href="https://expo-2025-no-uva.vercel.app/" target="_blank" rel="noopener noreferrer" class="py-1 text-neon hover:underline">Demo</a>
+          <a href="https://github.com/GabrielTrejo2008/Expo-2025-noUva" target="_blank" rel="noopener noreferrer" class="py-1 text-ice hover:underline">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="group rounded-xl border border-line bg-panel overflow-hidden flex flex-col hover:-translate-y-1 hover:border-neon/60 hover:shadow-[0_10px_40px_-15px_rgba(52,211,153,.5)] transition md:col-span-2 lg:col-span-1">
+      <div class="h-36 border-b border-line bg-ink/60">
+        <img src="Routify.jpeg" alt="Routify logo" class="h-full w-full  ">
+      </div>
+      <div class="p-6 flex flex-col flex-1">
+        <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs mb-4"><span class="text-ice">Next.js</span><span class="text-neon">JavaScript</span></div>
+        <div class="flex items-baseline justify-between gap-3">
+          <h3 class="text-xl font-semibold text-white">Routify</h3>
+          <span class="shrink-0 rounded-md border border-neon/40 bg-neon/10 px-2 py-0.5 font-mono text-xs text-neon">2026</span>
+        </div>
+        <p class="mt-2 text-slate-400 text-sm">A website focused on helping public transportation companies manage their organization, income and expenses, thereby providing a better service to users.</p>
+        <p class="mt-3 text-sm text-slate-300"><strong class="text-ice">My role:</strong> On this website I worked a little as UI/UX Designer and then I worked as Front-end Developer programming the schedule page and the sidebar.</p>
+        <details class="mt-4 rounded-lg border border-line bg-ink/60 open:border-neon/50">
+          <summary class="cursor-pointer select-none px-4 py-3 text-sm font-semibold text-neon marker:text-neon hover:text-white">Watch video</summary>
+          <div class="px-3 pb-3">
+            <video class="aspect-video w-full rounded-md bg-black" controls preload="metadata" src="Routify.mp4">Your browser does not support video.</video>
+          </div>
+        </details>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<section id="courses" class="max-w-5xl mx-auto px-6 py-16 md:py-20 scroll-mt-28 md:scroll-mt-20">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-white"><span class="text-neon">/</span> Courses &amp; Certificates</h2>
+  <p class="mt-3 text-slate-400">Courses completed qver the last few years and their certificates.</p>
+  <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+    <article class="rounded-xl border border-line bg-panel overflow-hidden flex flex-col hover:-translate-y-1 hover:border-neon/60 hover:shadow-[0_10px_40px_-15px_rgba(52,211,153,.5)] transition">
+      <a href="Excel Expert.jpeg" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true" class="relative block aspect-[4/3] border-b border-line bg-ink/60">
+        <span class="absolute inset-0 flex items-center justify-center px-3 text-center text-sm text-slate-500">Certificate image</span>
+        <span class="absolute inset-0 bg-cover bg-center" style="background-image:url('Excel\ Expert.jpeg')"></span>
+      </a>
+      <div class="p-5 flex flex-col flex-1">
+        <p class="font-mono text-xs text-neon">Certiport, 2026</p>
+        <h3 class="mt-2 text-lg font-semibold text-white">Excel Expert</h3>
+        <a href="Excel Expert.jpeg" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 inline-block text-sm font-semibold text-ice hover:underline">View certificate</a>
+      </div>
+    </article>
+
+    <article class="rounded-xl border border-line bg-panel overflow-hidden flex flex-col hover:-translate-y-1 hover:border-neon/60 hover:shadow-[0_10px_40px_-15px_rgba(52,211,153,.5)] transition">
+      <a href="Pensamiento lógico.jpeg" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true" class="relative block aspect-[4/3] border-b border-line bg-ink/60">
+        <span class="absolute inset-0 flex items-center justify-center px-3 text-center text-sm text-slate-500">Certificate image</span>
+        <span class="absolute inset-0 bg-cover bg-center" style="background-image:url('Pensamiento\ lógico.jpeg')"></span>
+      </a>
+      <div class="p-5 flex flex-col flex-1">
+        <p class="font-mono text-xs text-neon">Platzi, 2026</p>
+        <h3 class="mt-2 text-lg font-semibold text-white">Pensamiento Lógico</h3>
+        <a href="Pensamiento lógico.jpeg" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 inline-block text-sm font-semibold text-ice hover:underline">View certificate</a>
+      </div>
+    </article>
+
+    <article class="rounded-xl border border-line bg-panel overflow-hidden flex flex-col hover:-translate-y-1 hover:border-neon/60 hover:shadow-[0_10px_40px_-15px_rgba(52,211,153,.5)] transition">
+      <a href="Estadística y probabilidad.jpeg" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true" class="relative block aspect-[4/3] border-b border-line bg-ink/60">
+        <span class="absolute inset-0 flex items-center justify-center px-3 text-center text-sm text-slate-500">Certificate image</span>
+        <span class="absolute inset-0 bg-cover bg-center" style="background-image:url('Estadística\ y\ probabilidad.jpeg')"></span>
+      </a>
+      <div class="p-5 flex flex-col flex-1">
+        <p class="font-mono text-xs text-neon">Platzi, 2026</p>
+        <h3 class="mt-2 text-lg font-semibold text-white">Estadística y Probabilidad</h3>
+        <a href="Estadística y probabilidad.jpeg" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 inline-block text-sm font-semibold text-ice hover:underline">View certificate</a>
+      </div>
+    </article>
+
+    <article class="rounded-xl border border-line bg-panel overflow-hidden flex flex-col hover:-translate-y-1 hover:border-neon/60 hover:shadow-[0_10px_40px_-15px_rgba(52,211,153,.5)] transition">
+      <a href="Ciberseguridad.jpeg" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true" class="relative block aspect-[4/3] border-b border-line bg-ink/60">
+        <span class="absolute inset-0 flex items-center justify-center px-3 text-center text-sm text-slate-500">Certificate image</span>
+        <span class="absolute inset-0 bg-cover bg-center" style="background-image:url('Ciberseguridad.jpeg')"></span>
+      </a>
+      <div class="p-5 flex flex-col flex-1">
+        <p class="font-mono text-xs text-neon">Platzi, 2026</p>
+        <h3 class="mt-2 text-lg font-semibold text-white">Ciberseguridad Preventiva</h3>
+        <a href="Ciberseguridad.jpeg" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 inline-block text-sm font-semibold text-ice hover:underline">View certificate</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="max-w-5xl mx-auto px-6 py-16 md:py-20 scroll-mt-28 md:scroll-mt-20">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-white"><span class="text-neon">/</span> Contact</h2>
+  <p class="mt-3 text-slate-400">You can reach me through any of these channels.</p>
+  <div class="mt-10 grid sm:grid-cols-2 gap-5">
+    <a href="mailto:oscar.adalberto.ramirez.s@gmail.com" class="min-w-0 rounded-xl border border-line bg-panel p-5 hover:border-neon/60 transition-colors">
+      <span class="block font-mono text-xs text-neon">Email</span>
+      <span class="mt-1 block font-semibold text-white break-words">oscar.adalberto.ramirez.s@gmail.com</span>
+    </a>
+    <a href="tel:+50364435110" class="min-w-0 rounded-xl border border-line bg-panel p-5 hover:border-neon/60 transition-colors">
+      <span class="block font-mono text-xs text-neon">Phone</span>
+      <span class="mt-1 block font-semibold text-white">+503 6443 5110</span>
+    </a>
+    <a href="https://www.linkedin.com/in/oscar-ramirez-10b4a3430?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="min-w-0 rounded-xl border border-line bg-panel p-5 hover:border-ice/60 transition-colors">
+      <span class="block font-mono text-xs text-ice">LinkedIn</span>
+      <span class="mt-1 block font-semibold text-white break-words">linkedin.com/in/oscar-ramirez</span>
+    </a>
+    <a href="https://github.com/Adalberto-Ramirez" target="_blank" rel="noopener noreferrer" class="min-w-0 rounded-xl border border-line bg-panel p-5 hover:border-ice/60 transition-colors">
+      <span class="block font-mono text-xs text-ice">GitHub</span>
+      <span class="mt-1 block font-semibold text-white break-words">github.com/Adalberto-Ramirez</span>
+    </a>
+  </div>
+</section>
+
+<footer class="border-t border-line py-10 px-6 text-center text-sm text-slate-500">
+  <p>© 2026 Oscar Ramirez · El Salvador</p>
+  <p class="mt-1">Built with HTML and Tailwind CSS.</p>
+</footer>
+
+</body>
+</html>
